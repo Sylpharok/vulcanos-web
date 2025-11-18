@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulcanOS - El Sistema Operativo Definitivo para Gaming</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de la fuente Inter y tema oscuro -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'vulcan-dark': '#0f172a', // Slate-900 oscuro
+                        'vulcan-accent': '#ef4444', // Rojo vibrante (Red-500)
+                        'vulcan-secondary': '#f97316', // Naranja para detalles
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px rgba(239, 68, 68, 0.7)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-vulcan-dark text-gray-100 antialiased">
+
+    <!-- Navegación -->
+    <header class="p-4 border-b border-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold tracking-tight text-vulcan-accent">
+                <span class="text-gray-200">VULCAN</span>OS
+            </h1>
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#caracteristicas" class="hover:text-vulcan-accent transition duration-300">Características</a>
+                <a href="#rendimiento" class="hover:text-vulcan-accent transition duration-300">Rendimiento</a>
+                <a href="#descarga" class="hover:text-vulcan-accent transition duration-300">Descarga</a>
+                <a href="#" class="hover:text-vulcan-accent transition duration-300">Comunidad</a>
+            </nav>
+            <button class="md:hidden text-2xl text-vulcan-accent">☰</button>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="py-20 md:py-32 text-center bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-5xl md:text-7xl font-black mb-4 leading-tight">
+                Potencia tu juego. <br class="md:hidden">
+                <span class="text-vulcan-accent">Rendimiento Extremo.</span>
+            </h2>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10">
+                VulcanOS combina la estabilidad inquebrantable de <span class="font-semibold text-sky-400">Debian</span> con optimizaciones de bajo nivel para garantizar los FPS máximos y la latencia más baja.
+            </p>
+            <a href="#descarga" class="inline-block px-12 py-4 bg-vulcan-accent text-white text-lg font-bold uppercase rounded-lg shadow-xl shadow-red-700/50 hover:bg-red-600 transition duration-300 transform hover:scale-105" style="box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);">
+                Descargar VulcanOS v1.0 Beta
+            </a>
+            <p class="mt-4 text-sm text-gray-500">Libre y de código abierto. Basado en Debian.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <section id="caracteristicas" class="py-20 bg-vulcan-dark">
+        <div class="container mx-auto px-4">
+            <h3 class="text-4xl font-bold text-center mb-16 text-gray-200">¿Por Qué VulcanOS?</h3>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Característica 1: Rendimiento -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-glow transition duration-500 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-vulcan-accent">🚀</div>
+                    <h4 class="text-2xl font-semibold mb-3 text-gray-50">Optimización Extrema</h4>
+                    <p class="text-gray-400">Kernel ajustado para baja latencia, controladores gráficos actualizados y sistemas de gestión de recursos para priorizar siempre tus juegos.</p>
+                </div>
+
+                <!-- Característica 2: Estabilidad (Debian) -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-glow transition duration-500 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-sky-400">🛡️</div>
+                    <h4 class="text-2xl font-semibold mb-3 text-gray-50">La Roca de Debian</h4>
+                    <p class="text-gray-400">Basado en la rama estable de Debian. Esto significa que obtienes la confiabilidad, seguridad y el acceso a millones de paquetes de software.</p>
+                </div>
+
+                <!-- Característica 3: Gaming Tools -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-glow transition duration-500 transform hover:-translate-y-1">
+                    <div class="text-4xl mb-4 text-yellow-500">🎮</div>
+                    <h4 class="text-2xl font-semibold mb-3 text-gray-50">Herramientas Gaming Preinstaladas</h4>
+                    <p class="text-gray-400">Incluye Wine, Proton (con optimizaciones), Lutris y Steam preconfigurados, listos para que empieces a jugar sin complicaciones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Visualización y Mockup -->
+    <section id="rendimiento" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-4xl font-bold mb-6 text-gray-200">Diseño Intuitivo y Elegante</h3>
+            <p class="text-lg text-gray-400 max-w-4xl mx-auto mb-12">
+                VulcanOS presenta un entorno de escritorio ligero y moderno, diseñado para ser eficiente y visualmente atractivo.
+            </p>
+
+            <!-- Mockup Placeholder -->
+            <div class="w-full max-w-5xl mx-auto rounded-xl overflow-hidden shadow-2xl border-4 border-gray-700">
+                <img src="https://placehold.co/1200x675/1e293b/a5b4fc?text=PANTALLAZO+DE+VULCANOS" alt="Pantallazo del escritorio de VulcanOS" class="w-full h-auto object-cover">
+            </div>
+
+            <div class="mt-12">
+                <a href="#" class="text-vulcan-accent hover:text-red-400 font-semibold transition duration-300">
+                    Ver más galerías de imágenes →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Descarga -->
+    <section id="descarga" class="py-20 bg-vulcan-dark text-center">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h3 class="text-4xl font-bold mb-4 text-gray-200">¡Es Hora de Jugar!</h3>
+            <p class="text-xl text-gray-400 mb-8">
+                Descarga la imagen ISO de VulcanOS hoy mismo y experimenta el Linux gaming como nunca antes.
+            </p>
+
+            <a href="#" class="inline-block px-12 py-4 bg-vulcan-accent text-white text-xl font-bold uppercase rounded-lg shadow-xl shadow-red-700/50 hover:bg-red-600 transition duration-300 transform hover:scale-105">
+                Descargar ISO (64-bit)
+            </a>
+
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-8 mt-10 text-gray-400 text-sm">
+                <p>Checksum SHA256: <code>ABCD-1234-EFGH-5678</code></p>
+                <p>Tamaño: 4.2 GB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="p-8 bg-gray-900 border-t border-gray-800 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 VulcanOS. Un proyecto Open Source. Impulsado por Debian.</p>
+        <div class="mt-2 space-x-4">
+            <a href="#" class="hover:text-vulcan-accent transition duration-300">Licencia GPL</a>
+            <a href="#" class="hover:text-vulcan-accent transition duration-300">Política de Privacidad</a>
+            <a href="#" class="hover:text-vulcan-accent transition duration-300">Contáctanos</a>
+        </div>
+    </footer>
+
+</body>
+</html>
